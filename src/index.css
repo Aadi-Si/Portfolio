@@ -4,6 +4,10 @@
   --font-bebas:'Bebas Neue',sans-serif;
 } 
 
+@theme{
+  --font-inter:'inter',sans-serif;
+}
+
 body{
   background-color: #F8F4EE;
 }
