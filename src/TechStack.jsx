@@ -16,7 +16,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 const TechStack = () => {
   return (
-    <div className="p-5 bg-blue-300">
+    <div className="p-5">
       <button className="font-inter border-2 p-2 rounded-2xl bg-[#F8F4EE] font-semibold cursor-pointer flex">
         Based in India <GoDotFill className="ml-1 text-2xl text-orange-400 " />
       </button>
@@ -38,12 +38,12 @@ const TechStack = () => {
       </div>
       <div className="mt-8">
         <h4 className="font-inter font-bold">TECH I WORK WITH</h4>
-        <div className="flex text-5xl gap-8 flex-wrap mt-5">
-          <IoLogoReact  />
-          <FaJsSquare  />
-          <BsTypescript  />
-          <FaNode  />
-          <SiMongodb  />
+        <div className="flex text-5xl gap-5 flex-wrap mt-5">
+          <IoLogoReact className="" />
+          <FaJsSquare  className=""/>
+          <BsTypescript  className=""/>
+          <FaNode  className=""/>
+          <SiMongodb  className=""/>
           <SiTailwindcss  />
           <FaJava  />
           <FaPython  />

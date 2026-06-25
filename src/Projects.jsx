@@ -2,7 +2,7 @@
 import Project from "./components/Project";
 function Projects() {
   return (
-    <div className="p-5 bg-blue-300">
+    <div className="p-5 rounded-lg overflow-hidden">
       <h5 className="font-inter font-bold text-orange-400 text-lg mt-3">
         FEATURED PROJECTS
       </h5>
