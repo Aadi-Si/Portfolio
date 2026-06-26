@@ -5,6 +5,7 @@ import Navbar from "./Navbar"
 import Projects from "./Projects"
 import TechStack from "./TechStack"
 import Connect from "./Connect"
+import Footer from "./Footer"
 
 function App(){
 return (
@@ -16,6 +17,7 @@ return (
     <Projects/>
     <Journey/>
     <Connect/>
+    <Footer/>
   </main>
 )
 }

@@ -16,7 +16,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 const TechStack = () => {
   return (
-    <div className="p-5">
+    <div className="p-5 md:pl-10 md:pr-10 border-2">
       <button className="font-inter border-2 p-2 rounded-2xl bg-[#F8F4EE] font-semibold cursor-pointer flex">
         Based in India <GoDotFill className="ml-1 text-2xl text-orange-400 " />
       </button>
@@ -37,23 +37,92 @@ const TechStack = () => {
         </div>
       </div>
       <div className="mt-8">
-        <h4 className="font-inter font-bold">TECH I WORK WITH</h4>
-        <div className="flex text-5xl gap-5 flex-wrap mt-5">
-          <IoLogoReact className="" />
-          <FaJsSquare  className=""/>
-          <BsTypescript  className=""/>
-          <FaNode  className=""/>
-          <SiMongodb  className=""/>
-          <SiTailwindcss  />
-          <FaJava  />
-          <FaPython  />
-          <SiNextdotjs  />
-          <BiLogoPostgresql  />
-          <SiGsap  />
-          <BiLogoSpringBoot  />
-          <TbBrandRedux  />
-          <FaGitAlt  />
-          <SiPostman />
+        <h4 className="font-inter font-black text-2xl md:text-8xl md:font-black text-center md:p-5">
+          <span className="block">TECH STACK</span>
+          <span className="block "> I WORK WITH</span>
+        </h4>
+        <div className="relative mt-5 md:mt-15 grid grid-cols-3 md:grid-cols-5">
+          {/* Vertical separators */}
+
+          <div className="pointer-events-none absolute left-1/3 md:left-[20%] top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          <div className="pointer-events-none absolute left-2/3 md:left-[40%] top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          {/* These only exist on desktop (5 columns) */}
+          <div className="pointer-events-none absolute hidden md:block left-[60%] top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          <div className="pointer-events-none absolute hidden md:block left-[80%] top-0 h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          {/* Horizontal separators */}
+
+          <div className="pointer-events-none absolute top-[20%] md:top-[33.333%] left-0 h-px w-full -translate-y-1/2 bg-[linear-gradient(to_right,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          <div className="pointer-events-none absolute top-[40%] md:top-[66.666%] left-0 h-px w-full -translate-y-1/2 bg-[linear-gradient(to_right,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          {/* These only exist on mobile (5 rows) */}
+          <div className="pointer-events-none absolute md:hidden top-[60%] left-0 h-px w-full -translate-y-1/2 bg-[linear-gradient(to_right,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          <div className="pointer-events-none absolute md:hidden top-[80%] left-0 h-px w-full -translate-y-1/2 bg-[linear-gradient(to_right,transparent_0%,#d1d5db_5%,#d1d5db_95%,transparent_100%)]" />
+
+          <div className="grid place-content-center p-5 md:p-1">
+            <IoLogoReact className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <FaJsSquare className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 ">
+            <FaNode className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 b">
+            <BsTypescript className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 ">
+            <SiMongodb className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <SiTailwindcss className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 b">
+            <FaJava className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <FaPython className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 b">
+            <SiNextdotjs className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 bg">
+            <BiLogoPostgresql className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <SiGsap className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10 b">
+            <TbBrandRedux className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <BiLogoSpringBoot className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-1">
+            <FaGitAlt className="text-5xl md:text-6xl" />
+          </div>
+
+          <div className="grid place-content-center p-5 md:p-10">
+            <SiPostman className="text-5xl md:text-6xl" />
+          </div>
         </div>
       </div>
     </div>
